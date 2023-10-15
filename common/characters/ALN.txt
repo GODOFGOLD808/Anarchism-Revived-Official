@@ -1,0 +1,15 @@
+characters = {
+	ALN_carl_bjorkman = {
+		name = "Carl Björkman" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_carl_bjorkman
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1948.9.5.1"
+			id = -1
+		}
+	}
+}

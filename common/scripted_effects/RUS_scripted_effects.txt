@@ -1,0 +1,103 @@
+### Russia Spawns
+RUS_russian_civil_war = {
+	hidden_effect = {
+		RUS = {
+			### States
+			transfer_state = 137
+			transfer_state = 217
+			transfer_state = 218
+			transfer_state = 228
+			transfer_state = 229
+			transfer_state = 230
+			transfer_state = 231
+			transfer_state = 232
+			transfer_state = 233
+			transfer_state = 234
+			transfer_state = 235
+			transfer_state = 236
+			transfer_state = 237
+			transfer_state = 238
+			transfer_state = 239
+			transfer_state = 245
+			transfer_state = 251
+			transfer_state = 260
+			transfer_state = 265
+			transfer_state = 401
+			transfer_state = 406
+			transfer_state = 407
+			transfer_state = 652
+			transfer_state = 821
+			transfer_state = 826
+			transfer_state = 827
+			transfer_state = 828
+			transfer_state = 829
+			transfer_state = 919
+
+			### Essentials
+			set_capital = {
+				state = 217
+			}
+			change_tag_from = SOV
+			add_state_core = {
+				every_state = {
+					is_core_of = SOV
+				}
+			}
+
+			### Russian Provisional Government
+			create_country_leader = {
+				name = RUS_provisional_government
+				desc = "POLITICS_RUSSIA_PROVISIONAL_GOVERNMENT_DESC"
+				picture = GFX_RUS_provisional_government
+				ideology = legislative_assembly
+				traits = {
+					
+				}
+			}
+
+			SOV = {
+				transfer_units_fraction= {
+					target = RUS
+					size = 0.5
+					stockpile_ratio = 0.6
+					army_ratio = 0.5
+					navy_ratio = 0.5
+					air_ratio = 0.5
+				}
+				### Equipment
+				send_equipment_fraction = {
+					value = 0.3
+					target = RUS
+				}
+			}
+		}
+	}
+}
+
+RUS_russian_cities_states_post_cw = {
+	195 = { set_state_name = SOV_StPetersburg }
+	set_province_name = {
+		id = 3151
+		name = SOV_StPetersburg
+	}
+	653 = { set_state_name = SOV_Yekaterinburg }
+	set_province_name = {
+		id = 1821
+		name = SOV_Yekaterinburg
+	}
+	217 = { set_state_name = SOV_Tsaritsyn }
+	set_province_name = {
+		id = 3529
+		name = SOV_Tsaritsyn
+	}
+	227 = { set_state_name = SOV_Yuzovka }
+	set_province_name = {
+		id = 6474
+		name = SOV_Yuzovka
+	}
+	742 = { set_state_name = SOV_Dushanbe }
+	set_province_name = {
+		id = 1384
+		name = SOV_Dushanbe
+	}
+}

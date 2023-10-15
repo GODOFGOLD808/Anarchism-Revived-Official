@@ -1,0 +1,24 @@
+state={
+	id=936
+	name="STATE_936"
+	
+	history={
+		owner = ROM
+		victory_points = {
+			657 3 
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+		}
+		add_core_of = ROM
+	}
+	
+	provinces={
+		657 687 3076 9635 
+	}
+	manpower=900000
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category=pastoral
+}

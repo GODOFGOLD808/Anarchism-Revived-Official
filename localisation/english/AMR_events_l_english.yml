@@ -1,0 +1,67 @@
+﻿l_english:
+ ### New Paranoia ###
+ new_paranoia.1.title:0 "[Root.GetLeader] concerned about Factionalism"
+ new_paranoia.1.desc:0 "In a recent session of the Central Committee, Comrade [Root.GetLeader] noted the growing factionalism inside the party. While all members of the committee were quick to assure him of their full and unconditional support, this has apparently done very little to ease his concerns. According to Comrade [Root.GetLeader], we must always be vigilant for saboteurs and wreckers who plot against the state, in whatever position they may be.\n\nThis news comes as a bit of a surprise to many in the party, who believed that the threat of a party split ended with Trotsky's exile."
+ new_paranoia.1.a:0 "Is there really anything to his worries?"
+ new_paranoia.2.title:0 "Uniting the Front"
+ new_paranoia.2.desc:0 "In the city of Volgograd, whispers of an anti-marxist wave surrounded secret undeground meetings. Hoping that soon enough the incumbant state under Stalin would fall, leaving many to endorse a new Russia. Rioters are capturing armory supply and seizing strategic points before the real storm commences."
+ new_paranoia.2.a:0 "Make the Preparations!"
+ #
+ ### 2nd Russian Civil War ###
+ russian_civil_war.1.title:0 "Embrace our Heritage"
+ russian_civil_war.1.desc:0 "Our operations can no longer continue covertly. [ROOT.GetLeader] has mobilized the army and the NKVD, and has started rounding up everyone suspected of plotting against the state. If we don't act now everything we have fought for will be for naught."
+ russian_civil_war.1.a:0 "For the Motherland!"
+ russian_civil_war.2.title:0 "Dawn of New Russian Politics"
+ russian_civil_war.2.desc:0 "In the wake of the fighting from the 2nd Russian Civil War, surviving politicians have met in the Rebel capital Volgograd to discuss Russia going forward. The temporary government acted as the gateway to what is now the new era for Russian Politics."
+ russian_civil_war.2.a:0 "Konstantin's Government"
+ russian_civil_war.2.b:0 "Kerensky's Republic"
+ russian_civil_war.2.c:0 "Alexander's Union"
+ russian_civil_war.2.d:0 "Grand White Council"
+ russian_civil_war.3.title:0 "A Post Civil War Russia"
+ russian_civil_war.3.desc:0 "The sessolation of the vast nation is catastrophic, the dead lay in the streets, infrastructure broken and industry wavering, this is now a time to heal and a time to prosper from here on out."
+ russian_civil_war.3.a:0 "We must Heal"
+ russian_civil_war.3.title:0 "Mongolia's Fate"
+ russian_civil_war.3.desc:0 "Recent reports of a potential civil war in our overlord's territory have sparked concern of our involvement, how shall we proceed?"
+ russian_civil_war.3.a:0 "It's not worth it"
+ russian_civil_war.3.b:0 "We shall stay"
+ russian_civil_war.4.title:0 "Tannu Tuva's Fate"
+ russian_civil_war.4.a:0 "It's not worth it"
+ russian_civil_war.4.b:0 "We shall stay"
+ mladorossi.1.title:0 "[GER.GetNameDef] Faces New Foe"
+ mladorossi.1.desc:0 "The rising struggle with local enforcement deems themselvves as a hybrid system of Monarchism and Communism. The Mladorossi was founded by Alexander Kazembek and wishes to establish a Free and Young Russia from the grip of Tyranny."
+ mladorossi.1.a:0 "Run for the Urals!"
+ #
+ ### 2nd American Civil War ###
+ american_cw.1.title:0 "America in Turmoil"
+ american_cw.1.desc:0 "Radical movements riot in the streets of DC, will this ever be stopped?"
+ american_cw.1.a:0 "Send in the Military!"
+ american_cw.2.title:0 "The Second American Civil War"
+ american_cw.2.desc:0 "The Rioters take up arms, our forces can no longer contain them."
+ american_cw.2.a:0 "To arms!"
+ #
+ ### Makhnovshchina ###
+ makhnovshchina.1.title:0 "Rise of the Black Army"
+ makhnovshchina.1.desc:0 "A Militant Group led by Revolutionary Nestor Makhno. His intent of opposing centralized society and spreading such a free society to others and aid external Liberal-Socialists, how shall we approach this once the war is declared?"
+ makhnovshchina.1.a:0 "Stay in Russia"
+ makhnovshchina.1.c:0 "Let's leave this land"
+ #
+ ### Ideological Events ###
+ ideologies.1.title:0 "Anarchism on the Rise"
+ ideologies.1.desc:0 "Instability and decudent movements clash in the streets with local authorities. If left alone or mismanaged, disaster looms over the country."
+ ideologies.1.a:0 "Burn these Barbarians!"
+ ideologies.1.b:0 "Answer to Demands"
+ #
+ ### Other Events ###
+ giant.1.title:0 "The Alton Giant"
+ giant.1.desc:0 "Robert Wadlow, a child of two normal parents has grown expodentially past 8'0 tall and still growing. there's no signal that his growth will halt anytime soon, could reach 9'0+ feet tall at the rate he's at."
+ giant.1.a:0 "What a feat!"
+ giant.2.title:0 "Robert Wadlow has Passed"
+ giant.2.desc:0 "Robert Wadlow, the Altron Giant from America has passed away at the age of 22. He suffered from a foot infection caused by a metal brace in order to strengthen his ankle. Twelve people carried his caskect and 500 gathered to share their condolances."
+ giant.2.a:0 "We must pay respects"
+ aland.1.title:0 "Aland in Question"
+ aland.1.desc:0 "The crisis that involved the isles West of us are a strategic point for anyone in the Baltic Sea. Before we take action we must consider any possibility that comes our way, what shall we do with Aland?"
+ aland.1.a:0 "Annex it"
+ aland.1.b:0 "Free it"
+ aland.1.c:0 "To Sweden"
+ #
+ 

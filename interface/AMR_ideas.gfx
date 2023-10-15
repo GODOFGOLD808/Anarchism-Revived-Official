@@ -1,0 +1,13 @@
+# Russian Generic Leader Portraits
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_wreck_my_nation"
+		texturefile = "gfx/interface/ideas/great_turmoil.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SOV_internal_factionalism"
+		texturefile = "gfx/interface/ideas/internal_factionalism.dds"
+	}
+}

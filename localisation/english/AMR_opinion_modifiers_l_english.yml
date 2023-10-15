@@ -1,0 +1,11 @@
+﻿l_english:
+ ### New Opinion Modifiers ###
+ gratitude:0 "Gratitude"
+ 
+ # Ideological Opinion Modifiers
+ same_ideology:0 "Same Ideology"
+ similar_ideology:0 "Similar Ideology"
+ distant_ideology:0 "Distant Ideology"
+ different_ideology:0 "Different Ideology"
+ radical_ideology:0 "Radical Ideology"
+ 

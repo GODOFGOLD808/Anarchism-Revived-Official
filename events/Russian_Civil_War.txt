@@ -1,0 +1,348 @@
+### This replaces the old Paranoia System for a more straight forward and easier way of making a Civil War Spark.
+
+add_namespace = russian_civil_war
+
+# Becoming RUS during Civil War
+country_event = {
+    id = russian_civil_war.1
+    title = russian_civil_war.1.title
+    desc = russian_civil_war.1.desc
+    picture = GFX_report_event_soldiers_marching
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	immediate = {
+		# Starts as RUS in Civil War
+		RUS_russian_civil_war = yes
+		#
+		## Inheritance
+		#hidden_effect = {
+		#	inherit_technology = SOV
+		#	load_focus_tree = { tree = soviet_focus keep_completed = yes }
+		#}
+	}
+	
+	trigger = {
+		tag = SOV
+		has_government = communism
+		has_country_leader = {
+			character = SOV_iosif_stalin
+			ruling_only = yes
+		}
+		neutrality > 0.30
+		has_idea = SOV_internal_factionalism
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = russian_civil_war.1.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			# RUS fights SOV
+			SOV = {
+				dismantle_faction = yes
+				declare_war_on = {
+					target = RUS
+					type = civil_war
+				}
+			}
+			add_civil_war_target = SOV
+		}
+		hidden_effect = {
+			RUS_russian_cities = yes
+			RUS_russian_states = yes
+			RUS = {
+				load_focus_tree = soviet_focus
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+}
+
+# A Post Civil War Russia
+country_event = {
+    id = russian_civil_war.2
+    title = russian_civil_war.2.title
+    desc = russian_civil_war.2.desc
+    picture = GFX_report_event_post_civil_war_russia
+    is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		# Must be RUS
+		tag = RUS
+
+		# Must be leader
+		AND = {
+			has_country_leader = {
+				character = RUS_provisional_government
+				ruling_only = yes
+			}
+		}
+
+		# Cannot have war
+		NOT = {
+			has_war_with = SOV
+			has_war_with = MON
+			has_war_with = TAN
+		}
+		AND = {
+			has_war = no
+			has_civil_war = no
+		}
+
+		# Must control or own these states
+		AND = {
+			controls_state = 195 # St Petersburg
+			controls_state = 219 # Moscow
+		}
+		AND = {
+			owns_state = 195
+			owns_state = 219
+		}
+
+		# Must be at least this ideology/government
+		AND = {
+			has_government = neutrality
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_political_power = 100
+			add_offsite_building = { type = indutrial_complex level = 2 }
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+		hidden_effect = {
+			RUS = {
+				set_capital = { state = 195 }
+			}
+			RUS_russian_cities_states_post_cw = yes
+			every_state = {
+				limit = {
+					is_core_of = SOV
+				}
+				add_core_of = RUS
+				remove_core = SOV
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		hidden_effect = {
+			set_party_name = { # RFP
+				ideology = fascism
+				long_name = RUS_fascist_party_long
+				name = RUS_fascist_party
+			}
+			set_party_name = { # SRP
+				ideology = democratic
+				long_name = RUS_socialist_revolutionary_party_long
+				name = RUS_socialist_revolutionary_party
+			}
+			set_party_name = { # WO
+				ideology = syndicalism
+				long_name = RUS_workers_opposition_party_long
+				name = RUS_workers_opposition_party
+			}
+			set_party_name = { # VFO
+				ideology = nazizm
+				long_name = RUS_all_russian_fascist_organization_party_long
+				name = RUS_all_russian_fascist_organization_party
+			}
+		}
+	}
+	
+    option = { # Konstantin's Government
+        name = russian_civil_war.2.a
+        ai_chance = {
+            base = 30
+        }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1936.1.1"
+				election_frequency = 0
+				long_name = TAG_party_long
+				name = TAG_party
+			}
+			create_country_leader = {
+				name = SOV_konstantin_rodzayevsky
+				desc = "POLITICS_KONSTANTIN_RODZAYEVSKY_DESC"
+				picture = GFX_portrait_SOV_aleksandr_kerensky
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+		}
+    }
+	option = { # Kerensky's Republic
+        name = russian_civil_war.2.b
+        ai_chance = {
+            base = 20
+        }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "1936.1.1"
+				election_frequency = 48
+			}
+			create_country_leader = {
+				name = SOV_aleksandr_kerensky
+				desc = "POLITICS_ALEKSANDR_KERENSKY_DESC"
+				picture = GFX_portrait_SOV_aleksandr_kerensky
+				ideology = social_democracy_subtype
+				traits = {
+				}
+			}
+		}
+    }
+	option = { # Alexander's Union
+        name = russian_civil_war.2.c
+        ai_chance = {
+            base = 15
+        }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = syndicalism
+				elections_allowed = no
+				last_election = "1936.1.1"
+				election_frequency = 24
+			}
+			create_country_leader = {
+				name = SOV_alexander_gavrilovich_shliapnikov
+				desc = "POLITICS_ALEXANDER_GAVRILOVICH_SHLIAPNIKOV_DESC"
+				picture = GFX_portrait_SOV_alexander_gavrilovich_shliapnikov
+				ideology = syndicalism_ideology
+				traits = {
+				}
+			}
+		}
+    }
+	option = { # Grand White Council
+        name = russian_civil_war.2.d
+        ai_chance = {
+            base = 20
+        }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no		# Via Event only
+				last_election = "1936.1.1"
+				election_frequency = 12
+				long_name = RUS_white_council_party_long
+				name = RUS_white_council_party
+			}
+			create_country_leader = {
+				name = RUS_russian_government
+				desc = "POLITICS_russian_government_DESC"
+				picture = GFX_portrait_RUS_russian_government
+				ideology = oligarchism
+				traits = {
+				}
+			}
+		}
+    }
+}
+
+# Mongolia's Fate
+country_event = {
+    id = russian_civil_war.3
+    title = russian_civil_war.3.title
+    desc = russian_civil_war.3.desc
+    picture = GFX_report_event_SOV_mongolia_fortify_border
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	immediate = {
+	}
+	
+	trigger = {
+		tag = SOV
+		SOV = {
+			has_completed_focus = SOV_the_eyes_fear
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = { # It's not worth it
+		name = russian_civil_war.3.a
+        ai_chance = {
+            base = 80
+        }
+		MON = {
+			leave_faction = yes
+		}
+	}
+	option = { # We shall stay
+		name = russian_civil_war.3.a
+        ai_chance = {
+            base = 20
+        }
+		# Nothing happens
+	}
+}
+
+# Tannu Tuva's Fate
+country_event = {
+    id = russian_civil_war.4
+    title = russian_civil_war.4.title
+    desc = russian_civil_war.3.desc
+    picture = GFX_report_event_SOV_mongolia_fortify_border
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	immediate = {
+		every_state = {
+			limit = {
+				is_core_of = TAN
+			}
+			add_core_of = RUS
+			add_core_of = SOV
+		}
+	}
+	
+	trigger = {
+		tag = SOV
+		SOV = {
+			has_completed_focus = SOV_the_eyes_fear
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = { # It's not worth it
+		name = russian_civil_war.4.a
+        ai_chance = {
+            base = 80
+        }
+		TAN = {
+			leave_faction = yes
+		}
+	}
+	option = { # We shall stay
+		name = russian_civil_war.4.a
+        ai_chance = {
+            base = 20
+        }
+		# Nothing happens
+	}
+}

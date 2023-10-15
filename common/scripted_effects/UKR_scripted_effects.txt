@@ -1,0 +1,53 @@
+### Makhnovshchina Spawns
+UKR_makhnovshchina = {
+	hidden_effect = {
+		UKR = {
+			### States
+			transfer_state = 196 # Kherson
+			transfer_state = 200 # Zaporizhzhia
+			transfer_state = 221 # Kharkiv
+			transfer_state = 226 # Dnipro
+			transfer_state = 227 # Donetsk
+			transfer_state = 920 # Palvohrad
+			transfer_state = 925 # Kakhovka
+
+			### Essentials
+			set_capital = {
+				state = 200
+			}
+
+			### Color
+			set_cosmetic_tag = UKR_makhnovshchina
+
+			### Vikor Bilash
+			create_country_leader = {
+				name = UKR_viktor_bilash
+				desc = "POLITICS_VIKTOR_BILASH_DESC"
+				picture = GFX_portrait_UKR_viktor_bilash
+				ideology = anarcho_ideology
+				traits = {
+					
+				}
+			}
+
+			SOV = {
+				transfer_units_fraction= {
+					target = UKR
+					size = 0.3
+					stockpile_ratio = 0.3
+					army_ratio = 0.3
+					navy_ratio = 0
+					air_ratio = 0
+				}
+				keep_unit_leaders_trigger = {
+					has_trait = #
+				}
+				### Equipment
+				send_equipment_fraction = {
+					value = 0.3
+					target = UKR
+				}
+			}
+		}
+	}
+}

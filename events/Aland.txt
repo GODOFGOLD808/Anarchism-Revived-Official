@@ -1,0 +1,78 @@
+
+add_namespace = aland
+
+# What should we do with Aland
+country_event = {
+    id = aland.1
+    title = aland.1.title
+    desc = aland.1.desc
+    picture = GFX_report_event_soldiers_marching
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	immediate = {
+		145 = {
+			set_demilitarized_zone = no
+		}
+	}
+	
+	trigger = {
+		tag = FIN
+		has_government = neutrality
+		OR = {
+			has_government = conservative
+		}
+		date > 1936.1.1
+		date < 1936.5.1
+		ALN = {
+			has_idea = independence_movement
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	option = { Annex them
+		name = aland.1.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			annex_country = {
+				target = GER
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = { Free them
+		name = aland.1.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			release = ALN
+		}
+	}
+	
+	option = { To Sweden
+		name = aland.1.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			SWE = {
+				annex_country = {
+					target = ALN
+					transfer_troops = yes
+				}
+				add_opinion_modifier = {
+					target = FIN
+					modifier = gratitude
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+add_namespace = makhnovshchina
+
+# Makhnovshchina Appears
+country_event = {
+	id = makhnovshchina.1
+	title = makhnovshchina.1.title
+	desc = makhnovshchina.1.desc
+	picture = GFX_report_event_black_army
+
+	is_triggered_only = yes
+	
+	trigger = {
+		SOV = {
+			anarchism > 0.05
+			AND = {
+				has_idea_with_trait = nihilist_revolutionary
+			}
+			AND = {
+				has_country_leader_with_trait = nihilist_revolutionary
+			}
+			AND = {
+				
+			}
+		}
+		RUS = {
+			anarchism > 0.05
+			AND = {
+				has_idea_with_trait = nihilist_revolutionary
+			}
+			AND = {
+				has_country_leader_with_trait = nihilist_revolutionary
+			}
+			AND = {
+				owns_all_makhnovshchina_states = yes
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			UKR_makhnovshchina = yes
+			SOV = {
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	# Stay in Russia
+	option = {
+		name = makhnovshchina.1.a
+		ai_chance = { factor = 90 }
+		# TBD
+	}
+	
+	# Let's leave this land
+	option = {
+		name = makhnovshchina.1.c
+		ai_chance = { factor = 0 }
+		UKR = {	# Player becomes Makhnovshchina
+			change_tag_from = ROOT
+		}
+		random_other_country = {
+			limit = {
+				is_core_of = UKR
+			}
+			remove_core_of = SOV
+		}
+	}
+}

@@ -1,0 +1,48 @@
+# Russian Generic Leader Portraits
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_land_1"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_land_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_land_2"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_land_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_land_3"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_land_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_land_4"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_land_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_land_5"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_land_5.dds"
+	}
+	
+	spriteType = { # Does nothing
+		name = "GFX_Portrait_Russian_Magic_Winner"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Magic_Winner.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_navy_1"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_navy_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_navy_2"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_navy_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Russian_Generic_navy_3"
+		texturefile = "gfx/leaders/RUS/Portrait_Russian_Generic_navy_3.dds"
+	}
+}

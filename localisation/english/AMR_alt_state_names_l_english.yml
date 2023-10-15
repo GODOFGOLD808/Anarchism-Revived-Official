@@ -1,0 +1,24 @@
+﻿l_english:
+ ### Alternate State Names ###
+ 
+ # Russia
+ RUS_STATE_195:0 "St Petersburg"
+ RUS_STATE_195:0 "Petrograd"
+ RUS_STATE_195:0 "Neva"
+ 
+ # Ukraine/Crimea
+ UKR_STATE_10:0 "Warszawa"
+ UKR_STATE_91:0 "Lviv"
+ UKR_STATE_137:0 "Krym"
+ UKR_STATE_202:0 "Kyiv"
+ UKR_STATE_221:0 "Kharkiv"
+ UKR_STATE_227:0 "Donetsk"
+ UKR_STATE_227:0 "Yuzovka"
+ UKR_STATE_196:0 "Cherson"
+ 
+ # Poland
+ POL_STATE_10:0 "Warszawa"
+ 
+ # China
+ CHI_STATE_608:0 "Peking"
+ 

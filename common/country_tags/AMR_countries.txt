@@ -1,0 +1,15 @@
+### Europe ###
+RUS	= "countries/Russia.txt"
+ALN	= "countries/Aland.txt"
+
+### North America ###
+# TBA
+
+### South America ###
+# TBA
+
+### Middle-East ###
+OTT	= "countries/Ottomans.txt"
+
+### Asia ###
+KPA	= "countries/KPA.txt"

@@ -1,0 +1,17 @@
+version="3.0"
+replace_path="common/decisions"
+replace_path="common/ideologies"
+replace_path="gfx/flags"
+replace_path="gfx/interface/ideologies"
+replace_path="gfx/loadingscreens"
+tags={
+	"Balance"
+	"Events"
+	"Fixes"
+	"Gameplay"
+	"Ideologies"
+}
+name="Anarchism Revived"
+picture="thumbnail.png"
+supported_version="1.13.*"
+remote_file_id="2061272933"

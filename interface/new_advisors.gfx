@@ -1,0 +1,129 @@
+spriteTypes = {
+	
+	###Country Advisors###
+	
+	#Generic
+	
+	spriteType = {
+		name = "GFX_ideas_generic_nihilist_revolutionary"
+		texturefile = "gfx/interface/ideas/ministers/ideas_generic_nihilist_revolutionary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_generic_autocratic_advocate"
+		texturefile = "gfx/interface/ideas/ministers/ideas_generic_autocratic_advocate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_generic_nazi_agitator"
+		texturefile = "gfx/interface/ideas/ministers/ideas_generic_nazi_agitator.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_generic_syndical_totalist"
+		texturefile = "gfx/interface/ideas/ministers/ideas_generic_syndical_totalist.dds"
+	}
+	
+	#GER
+	spriteType = {
+		name = "GFX_ideas_GER_anton_graf_von_arco_auf_valley"
+		texturefile = "gfx/interface/ideas/ministers/ideas_GER_anton_graf_von_arco_auf_valley.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_GER_erich_koch"
+		texturefile = "gfx/interface/ideas/ministers/ideas_GER_erich_koch.dds"
+	}
+	
+	#AUS
+	spriteType = {
+		name = "GFX_ideas_AUS_godwin_von_brumowski"
+		texturefile = "gfx/interface/ideas/ministers/ideas_AUS_godwin_von_brumowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_AUS_pierre_ramus"
+		texturefile = "gfx/interface/ideas/ministers/ideas_AUS_pierre_ramus.dds"
+	}
+	
+	#RUS
+	spriteType = {
+		name = "GFX_ideas_RUS_vladimir_kislitsin"
+		texturefile = "gfx/interface/ideas/ministers/ideas_RUS_vladimir_kislitsin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_RUS_maxim_gorky"
+		texturefile = "gfx/interface/ideas/ministers/ideas_RUS_maxim_gorky.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_RUS_nestor_makhno"
+		texturefile = "gfx/interface/ideas/ministers/ideas_RUS_nestor_makhno.dds"
+	}
+	
+	#SOV
+	spriteType = {
+		name = "GFX_ideas_SOV_vladimir_kislitsin"
+		texturefile = "gfx/interface/ideas/ministers/ideas_SOV_vladimir_kislitsin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_SOV_maxim_gorky"
+		texturefile = "gfx/interface/ideas/ministers/ideas_SOV_maxim_gorky.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_SOV_nestor_makhno"
+		texturefile = "gfx/interface/ideas/ministers/ideas_SOV_nestor_makhno.dds"
+	}
+	
+	#ENG
+	spriteType = {
+		name = "GFX_ideas_ENG_edward_viii"
+		texturefile = "gfx/interface/ideas/ministers/ideas_ENG_edward_viii.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_ENG_british_fascist"
+		texturefile = "gfx/interface/ideas/ministers/ideas_ENG_british_fascist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_ENG_ethel_mannin"
+		texturefile = "gfx/interface/ideas/ministers/ideas_ENG_ethel_mannin.dds"
+	}
+	
+	#FRA
+	spriteType = {
+		name = "GFX_ideas_FRA_emile_armand"
+		texturefile = "gfx/interface/ideas/ministers/ideas_FRA_emile_armand.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_FRA_charles_maurras"
+		texturefile = "gfx/interface/ideas/ministers/ideas_FRA_charles_maurras.dds"
+	}
+	
+	#SPR
+	spriteType = {
+		name = "GFX_ideas_SPR_francisco_ascaso"
+		texturefile = "gfx/interface/ideas/ministers/ideas_SPR_francisco_ascaso.dds"
+	}
+	
+	#USA
+	spriteType = {
+		name = "GFX_ideas_USA_ralph_adams_cram"
+		texturefile = "gfx/interface/ideas/ministers/ideas_USA_ralph_adams_cram.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_USA_fritz_julius_kuhn"
+		texturefile = "gfx/interface/ideas/ministers/ideas_USA_fritz_julius_kuhn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideas_USA_dorothy_day"
+		texturefile = "gfx/interface/ideas/ministers/ideas_USA_dorothy_day.dds"
+	}
+}

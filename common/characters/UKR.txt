@@ -1,0 +1,15 @@
+characters={
+	UKR_viktor_bilash={
+		name=UKR_viktor_bilash
+		portraits={
+			civilian={
+				large=GFX_portrait_UKR_viktor_bilash
+			}
+		}
+		country_leader={
+			ideology=platformism
+			traits={ dislikes_stalin militia_revolutionary }
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	
+	gratitude = {
+		value = -75
+	}
+}

@@ -1,0 +1,59 @@
+### Generic Ideological Events ###
+
+add_namespace = ideologies
+
+# Anarchism on the Rise
+country_event = {
+    id = ideologies.1
+    title = ideologies.1.title
+    desc = ideologies.1.desc
+    picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		# Must have this Requirement
+		has_anarchism_stats = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = { # Burn these Barbarians!
+		name = ideologies.1.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			custom_effect_tooltip = anarchism_1
+			add_popularity = {
+				ideology = anarchism
+				popularity = 0.5
+			}
+			add_political_power = -100
+			add_stability = -0.1
+		}
+	}
+	
+	option = { # Answer to Demands
+		name = ideologies.1.b
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			custom_effect_tooltip = anarchism_2
+			add_popularity = {
+				ideology = anarchism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = syndicalism
+				popularity = 0.15
+			}
+			remove_ideas = in_turmoil
+		}
+	}
+}

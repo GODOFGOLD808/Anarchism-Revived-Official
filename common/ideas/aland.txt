@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+
+		independence_movement = {
+					
+			allowed = {
+				original_tag = ALN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = independence_movement
+			
+			modifier = {
+				surrender_limit = 0.1
+				party_popularity_stability_factor = 0.25
+			}
+		}
+	}
+}

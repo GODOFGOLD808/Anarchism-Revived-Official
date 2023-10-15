@@ -1,0 +1,51 @@
+### This replaces the Spanish Civil War System for a more straight forward and easier way of making a Civil War Spark.
+
+add_namespace = spanish_civil_war
+
+# Election of 1936
+country_event = {
+    id = spanish_civil_war.1
+    title = spain.9.t								# <=== Uses LAR Title	
+    desc = lar_spain.1.desc							# <=== Uses LAR Desc
+    picture = GFX_report_event_election_vote
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	immediate = {
+		# Triggered Effect
+		SPR_civil_war_setup = yes
+		add_political_power = -35
+		add_ideas = SPR_government_power_struggle
+	}
+	
+	trigger = {
+		tag = SPR
+		
+		# Must be a Democratic Country
+		has_government = liberal
+		OR = {
+			has_government = conservative
+		}
+		
+		# Must have these focuses done
+		has_completed_focus = SPR_train_the_union_youth
+		
+		# Cannot have this Scripted Trigger
+		SPR_nationalist_garrisons = no
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	option = {
+		name = spanish_civil_war.1.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			nationalist_garrisons = yes
+		}
+	}
+}

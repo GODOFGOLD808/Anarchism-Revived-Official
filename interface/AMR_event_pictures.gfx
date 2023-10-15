@@ -1,0 +1,22 @@
+# 2nd American Civil War
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_american_turmoil"
+		texturefile = "gfx/event_pictures/event_cnt_fai.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_american_revolt"
+		texturefile = "gfx/event_pictures/event_cnt_fai.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_black_army"
+		texturefile = "gfx/event_pictures/report_event_black_army.dds"
+	}
+}

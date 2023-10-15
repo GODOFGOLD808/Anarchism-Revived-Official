@@ -1,0 +1,24 @@
+﻿l_english:
+ ###Minister Traits###
+ autocratic_advocate:0 "Autocratic Advocate"
+ autocratic_advocate_desc:0 "A firm believer that a monarchy is the best form of government as a monarch does not have to please political parties and can truly represent the will of the people."
+ nihilist_revolutionary:0 "Nihilist Revolutionary"
+ nihilist_revolutionary_desc:0 "A firm believer of free will and no government interference."
+ nazi_agitator:0 "Nazi Agitator"
+ nazi_agitator_desc:0 "A firm believer of Nazism, an Anti-Semitic Far-Right movement that uses Ultranationalism as it's main conceptual base. This variant of fascism is described as National Socalist and disdains Communist or Democratic Parties."
+ syndical_totalist:0 "Syndical Totalist"
+ syndical_totalist_desc:0 "A firm believer of Syndicalism, a poltical philosophy to support the worker unions as it's main conceptual base. This governance even allows for revolutionary waves in the name of protecting their working culture against other tyrannical Parties."
+ 
+ ### New Traits ###
+ trait_loyal_monarchist:0 "Loyal Monarchist"
+ trait_loyal_national:0 "Loyal National"
+ multi_lead:0 "Multi-Lead"
+ multi_lead_desc:0 "This political body and or entity is made up of different views of the Working Culture's ways, leading to different thoughts ending up into policy changes overtime."
+ dislikes_stalin:0 "Dislikes Stalin"
+ militia_revolutionary:0 "Militia Mevolutionary"
+ totalitarian_rexist:0 "Totalitarian Rexist"
+ fascist_nazi:0 "Fascist Nazi"
+ national_bolshevik:0 "National-Bolshevik"
+ national_bolshevik_desc:0 "Also known as Nazbols, it's philosophy combines that of Ultranationalism and Bolshevism into one syncretic political movement."
+ #
+ 

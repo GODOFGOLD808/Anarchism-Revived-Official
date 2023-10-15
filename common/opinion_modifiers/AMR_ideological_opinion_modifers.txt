@@ -1,0 +1,22 @@
+opinion_modifiers = {
+	
+	same_ideology = {
+		value = 25
+	}
+	
+	similar_ideology = {
+		value = 10
+	}
+	
+	distant_ideology = {
+		value = -10
+	}
+	
+	different_ideology = {
+		value = -25
+	}
+	
+	radical_ideology = { # Mainly for Anarchism
+		value = -50
+	}
+}

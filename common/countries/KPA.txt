@@ -1,0 +1,6 @@
+### North Korea/Korean People's Army ###
+
+graphical_culture = asian_gfx
+graphical_culture_2d = asian_2d	 
+
+color = { 128  0  0 } # Dark Red

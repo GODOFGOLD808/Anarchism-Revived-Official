@@ -1,0 +1,120 @@
+spriteTypes = {
+	
+	### RUS
+	
+	spriteType = {	#House of Romanov
+		name = "GFX_ideology_RUS_monarchism_group"
+		texturefile = "gfx/interface/ideologies/RUS/romanov.dds"
+	}
+	
+	spriteType = {	#Communist Party of Russia
+		name = "GFX_ideology_RUS_communism_group"
+		texturefile = "gfx/interface/ideologies/RUS/communist_party_of_russia.dds"
+	}
+	
+	spriteType = {	#Anarcho-Syndicalist Party
+		name = "GFX_ideology_RUS_libsoc_group"
+		texturefile = "gfx/interface/ideologies/RUS/anarcho_syndicalist.dds"
+	}
+	
+	### SOV
+	
+	spriteType = {	#Communist Party of the Soviet Union
+		name = "GFX_ideology_SOV_communism_group"
+		texturefile = "gfx/interface/ideologies/SOV/communist_party_of_the_soviet_union.dds"
+	}
+	
+	spriteType = {	#Union of Mladorossi
+		name = "GFX_ideology_SOV_monarchism_group"
+		texturefile = "gfx/interface/ideologies/SOV/mladorossi.dds"
+	}
+	
+	### GER
+	
+	spriteType = {	#House of Hohenzollern
+		name = "GFX_ideology_GER_monarchism_group"
+		texturefile = "gfx/interface/ideologies/GER/hohenzollern.dds"
+	}
+	
+	spriteType = {	#National Socialist German Workers' Party
+		name = "GFX_ideology_GER_nazism_group"
+		texturefile = "gfx/interface/ideologies/GER/national_socialist_german_workers_party.dds"
+	}
+	
+	spriteType = {	#German National People's Party
+		name = "GFX_ideology_GER_fascism_group"
+		texturefile = "gfx/interface/ideologies/GER/german_national_peoples_party.dds"
+	}
+	
+	spriteType = {	#Communist Party of Germany
+		name = "GFX_ideology_GER_communism_group"
+		texturefile = "gfx/interface/ideologies/GER/communist_party_of_germany.dds"
+	}
+	
+	### ENG
+	
+	spriteType = {	#Conservative Party
+		name = "GFX_ideology_ENG_conservative_group"
+		texturefile = "gfx/interface/ideologies/ENG/conservative_party.dds"
+	}
+	
+	spriteType = {	#House of Windsor
+		name = "GFX_ideology_ENG_monarchism_group"
+		texturefile = "gfx/interface/ideologies/ENG/windsor.dds"
+	}
+	
+	spriteType = {	#British Union of Fascists
+		name = "GFX_ideology_ENG_nazism_group"
+		texturefile = "gfx/interface/ideologies/ENG/british_union.dds"
+	}
+	
+	### USA
+	
+	spriteType = {	#Democratic Party
+		name = "GFX_ideology_USA_liberal_group"
+		texturefile = "gfx/interface/ideologies/USA/democrat.dds"
+	}
+	
+	spriteType = {	#Republican Party
+		name = "GFX_ideology_USA_conservative_group"
+		texturefile = "gfx/interface/ideologies/USA/republican.dds"
+	}
+	
+	spriteType = {	#Libertarian Party
+		name = "GFX_ideology_USA_neutrality_group"
+		texturefile = "gfx/interface/ideologies/USA/libertarian.dds"
+	}
+	
+	### CHI
+	
+	spriteType = {	#Kuomintang
+		name = "GFX_ideology_CHI_neutrality_group"
+		texturefile = "gfx/interface/ideologies/CHI/kuomintang.dds"
+	}
+	
+	spriteType = {	#Aisin-Gioro
+		name = "GFX_ideology_CHI_monarchism_group"
+		texturefile = "gfx/interface/ideologies/CHI/aisin_gioro.dds"
+	}
+	
+	### PER
+	
+	spriteType = {	#House of Pahlavi
+		name = "GFX_ideology_PER_monarchism_group"
+		texturefile = "gfx/interface/ideologies/PER/pahlavi.dds"
+	}
+	
+	### AUS
+	
+	spriteType = {	#Union of Habsburg
+		name = "GFX_ideology_AUS_monarchism_group"
+		texturefile = "gfx/interface/ideologies/AUS/habsburg.dds"
+	}
+	
+	### HUN
+	
+	spriteType = {	#Union of Habsburg
+		name = "GFX_ideology_AUS_monarchism_group"
+		texturefile = "gfx/interface/ideologies/HUN/habsburg.dds"
+	}
+}

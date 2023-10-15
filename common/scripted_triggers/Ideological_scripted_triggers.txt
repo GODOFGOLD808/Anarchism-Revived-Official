@@ -1,0 +1,42 @@
+### Ideological Scripted Triggers ###
+
+has_anarchism_stats = {
+	tag = ROOT
+		
+	# Must have this amount of Anarchist Popularity
+	AND = {
+		anarchism > 0.10 # 10%
+	}
+	
+	# Must have at least one of tthese Ideologies
+	has_government = communism
+	OR = {
+		has_government = syndicalism
+	}
+	OR = {
+		has_government = liberal
+	}
+	OR = {
+		has_government = neutrality
+	}
+	OR = {
+		has_government = conservative
+	}
+	OR = {
+		has_government = monarchism
+	}
+	OR = {
+		has_government = nazism
+	}
+	OR = {
+		has_government = fascism
+	}
+	
+	# Cannot start off as Anarchist
+	NOT = {
+		has_government = anarchism
+	}
+	
+	# Must have this Idea/National Spirit
+	has_idea = in_turmoil
+}

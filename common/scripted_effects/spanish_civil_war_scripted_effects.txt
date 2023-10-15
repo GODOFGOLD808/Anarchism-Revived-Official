@@ -1,0 +1,40 @@
+### For Spanish Civil War ###
+
+# Garrison setup for Nationalists
+nationalist_garrisons_prepare = {
+	hidden_effect = {
+		171 = {
+			set_state_flag = SPR_nationalist_garrisons
+		}
+		172 = {
+			set_state_flag = SPR_nationalist_garrisons
+		}
+		174 = {
+			set_state_flag = SPR_nationalist_garrisons
+		}
+		176 = {
+			set_state_flag = SPR_nationalist_garrisons
+		}
+		788 = {
+			set_state_flag = SPR_nationalist_garrisons
+		}
+		791 = {
+			set_state_flag = SPR_nationalist_garrisons
+		}
+	}
+}
+
+# Garrison setup for Anarchists
+anarchist_garrisons_prepare = {
+	hidden_effect = {
+		165 = {
+			set_state_flag = SPR_anarchist_garrisons
+		}
+		167 = {
+			set_state_flag = SPR_anarchist_garrisons
+		}
+		794 = {
+			set_state_flag = SPR_anarchist_garrisons
+		}
+	}
+}

@@ -1,0 +1,20 @@
+###New Events###
+
+spriteTypes = {
+	
+	#Giant Events
+	spriteType = {
+		name = "GFX_report_event_alton_giant"
+		texturefile = "gfx/event_pictures/report_event_alton_giant.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_robert_passes"
+		texturefile = "gfx/event_pictures/report_event_robert_passes.dds"
+	}
+	
+	spriteType = { # A Post Civil War Russia
+		name = "GFX_report_event_post_civil_war_russia"
+		texturefile = "gfx/event_pictures/report_event_post_civil_war_russia.dds"
+	}
+}

@@ -1,0 +1,12 @@
+﻿l_english:
+ ### New Scripted Effects ###
+ 
+ # Russian Civil War
+ RUS_the_eyes_fear_units:0 "The Eyes Fear Division"
+ RUS_russian_civil_war:0 "The Second Russian Civil War"
+ RUS_russian_cities_states_post_cw:0 "Rename the Russian Cities and States"
+ 
+ # Spanish Civil War
+ nationalist_garrisons_prepare:0 "Nationalist Garrisons Mobilize"
+ anarchist_garrisons_prepare:0 "Anarchist Garrisons Mobilize"
+ 

@@ -1,0 +1,83 @@
+###########################
+# New Paranoia Events
+###########################
+
+add_namespace = new_paranoia
+
+# [Root.GetLeader] Concerned about Factionalism
+country_event = {
+	id = new_paranoia.1
+	title = new_paranoia.1.title
+	desc = new_paranoia.1.desc
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = SOV
+		AND = {
+			has_country_leader = {
+				character = SOV_iosif_stalin
+				ruling_only = yes
+			}
+			has_government = communism
+			has_completed_focus = SOV_beaten_but_not_defeated
+		}
+	}
+
+	option = { # Is there really anything to his worries?"
+		name = new_paranoia.1.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			add_ideas = SOV_internal_factionalism
+		}
+	}
+}
+
+# Uniting the Front
+country_event = {
+	id = new_paranoia.2
+	title = new_paranoia.2.title
+	desc = new_paranoia.2.desc
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = SOV
+		AND = {
+			has_country_leader = {
+				character = SOV_iosif_stalin
+				ruling_only = yes
+			}
+			has_government = communism
+			has_completed_focus = SOV_embrace_the_black_hundreds
+			has_idea = SOV_internal_factionalism
+		}
+	}
+
+	option = { # Make the Preparations
+		name = new_paranoia.2.a
+		ai_chance = { factor = 100 }
+		SOV = {
+			add_command_power = -50
+			add_war_support = -0.25
+			add_manpower = -100000
+		}
+		hidden_effect = {
+			set_country_flag = stalin_is_paranoid
+		}
+	}
+}

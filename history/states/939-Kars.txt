@@ -1,0 +1,26 @@
+state={
+	id=939
+	name="STATE_939"
+	
+	history={
+		owner = TUR
+		victory_points = {
+			10472 3 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TUR
+		add_core_of = ARM
+		#add_core_of = RUS
+	}
+	
+	provinces={
+		7454 10403 10472 13273 13274 13275 13276 
+	}
+	manpower=364214
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=3.000
+}

@@ -1,0 +1,67 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+
+	spriteType = {
+		name = "GFX_portrait_operative_unknown"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown"
+		texturefile = "gfx/leaders/leader_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown_female"
+		texturefile = "gfx/leaders/leader_unknown_female.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_unknown_nazi"
+		texturefile = "gfx/leaders/leader_unknown_nazi.dds"
+	}
+	
+	### GER
+	
+	spriteType = {
+		name = "GFX_portrait_GER_ernst_toller"
+		texturefile = "gfx/leaders/GER/Portrait_GER_Ernst_Toller.dds"
+	}
+
+	### RUS
+
+	spriteType = {
+		name = "GFX_portrait_RUS_alexander_gavrilovich_shliapnikov"
+		texturefile = "gfx/leaders/RUS/Portrait_RUS_alexander_gavrilovich_shliapnikov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_RUS_anastasy_vonsyatsky"
+		texturefile = "gfx/leaders/RUS/Portrait_RUS_anastasy_vonsyatsky.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_RUS_russian_government"
+		texturefile = "gfx/leaders/RUS/Portrait_RUS_russian_government.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SOV_alexander_lvovich_kazembek"
+		texturefile = "gfx/leaders/SOV/Portrait_Alexander_Lvovich_Kazembek.dds"
+	}
+	
+	### UKR
+	
+	spriteType = {
+		name = "GFX_portrait_UKR_viktor_bilash"
+		texturefile = "gfx/leaders/UKR/Portrait_UKR_viktor_bilash.dds"
+	}
+	
+	### ALN
+	
+	spriteType = {
+		name = "GFX_portrait_carl_bjorkman"
+		texturefile = "gfx/leaders/ALN/Portrait_ALN_carl_bjorkman.dds"
+	}
+}

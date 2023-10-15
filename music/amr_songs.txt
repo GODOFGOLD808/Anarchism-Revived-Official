@@ -1,0 +1,43 @@
+
+music_station = "amr_track"
+
+# AMR TRACK
+music = {
+	song = "amr_track/mother_anarchy"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_government = anarchism
+		}		
+	}	
+}
+
+music = {
+	song = "amr_track/horst_wessel_lied"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			tag = GER
+			has_government = fascism
+			has_government = nazism
+		}		
+	}	
+}
+
+music = {
+	song = "amr_track/das_deutschlandlied"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			tag = GER
+			has_government = fascism
+			has_government = nazism
+		}		
+	}	
+}

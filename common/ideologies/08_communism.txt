@@ -1,0 +1,68 @@
+ideologies = {
+
+	communism = {
+
+		types = {
+
+			marxism = {
+			}
+
+			leninism = {
+			}
+
+			stalinism = {
+			}
+
+			anti_revisionism = {
+			}
+
+			anarcho_communism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNISM_1"
+			"FACTION_NAME_COMMUNISM_2"
+			"FACTION_NAME_COMMUNISM_3"
+			"FACTION_NAME_COMMUNISM_4"
+			"FACTION_NAME_COMMUNISM_5"
+		}
+
+		color = { 128 0 0 } # Dark Red
+
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+		ai_ideology_wanted_units_factor = 1.20
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_threshold_factor = 0.5
+			lend_lease_tension = 0.50
+		}
+
+		faction_modifiers = {
+
+		}
+	}
+}

@@ -1,0 +1,5 @@
+# For Spanish Civil War
+
+SPR_nationalist_garrisons = {
+	has_country_flag = nationalist_garrisons
+}
