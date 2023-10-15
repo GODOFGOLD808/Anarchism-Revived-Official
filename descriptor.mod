@@ -1,4 +1,4 @@
-version="3.0"
+version="3.0 Rework"
 replace_path="common/decisions"
 replace_path="common/ideologies"
 replace_path="gfx/flags"
