@@ -1,0 +1,8 @@
+﻿### New Political Events for Minors/Generic Stuff ###
+
+# TBA
+amr_political.1
+amr_political.2
+amr_political.3
+amr_political.4
+amr_political.5
