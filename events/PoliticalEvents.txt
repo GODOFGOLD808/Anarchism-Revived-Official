@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Political Events
 ###########################
 
@@ -404,7 +404,7 @@ country_event = {
 #		name = political.6.a
 #		if = {
 #			limit = {
-#				has_government = democratic
+#				has_democratic_government = yes
 #			}
 #			start_civil_war = {
 #				ruling_party = communism
@@ -653,7 +653,7 @@ country_event = {
 #		name = political.10.a
 #		if = {
 #			limit = {
-#				has_government = democratic
+#				has_democratic_government = yes
 #			}
 #			if = {
 #				limit = { fascism > 0.4 }
@@ -858,7 +858,7 @@ country_event = {
 #	is_triggered_only = yes
 #	
 #	trigger = {
-#		NOT = { has_government = democratic }
+#		NOT = { has_democratic_government = yes }
 #	}
 
 	# Seek government support
@@ -888,7 +888,7 @@ country_event = {
 	picture = GFX_report_event_journalists_speech
 	
 	trigger = {
-		NOT = { has_government = democratic }
+		NOT = { has_democratic_government = yes }
 		democratic > 0.6
 		NOT = { democratic > 0.7 }
 		check_has_focus_tree_to_switch_to_democratic = yes
@@ -988,7 +988,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = democratic_reformer
-		NOT = { has_government = democratic }
+		NOT = { has_democratic_government = yes }
 		NOT = { has_country_flag = democracy_opposition_formed }
 		is_puppet = no
 		NOT = { democratic > 0.59 }
@@ -1065,7 +1065,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = democratic_reformer
-		NOT = { has_government = democratic }
+		NOT = { has_democratic_government = yes }
 		has_country_flag = democracy_opposition_formed
 		NOT = { has_idea = democratic_opposition_voicing_protests }
 		NOT = {
@@ -1132,7 +1132,7 @@ country_event = {
 #	
 #	trigger = {
 #		has_idea_with_trait = democratic_reformer
-#		NOT = { has_government = democratic }
+#		NOT = { has_democratic_government = yes }
 #		democratic > 0.5
 #		has_country_flag = democracy_government_support
 #		is_puppet = no
@@ -1295,7 +1295,7 @@ country_event = {
 
 	#trigger = {
 	#	democratic > 0.5
-	#	NOT = { has_government = democratic }
+	#	NOT = { has_democratic_government = yes }
 	#	NOT = { has_idea = democratic_revolutionaries }
 	#	NOT = { has_idea = reign_of_terror }
 	#	is_puppet = no

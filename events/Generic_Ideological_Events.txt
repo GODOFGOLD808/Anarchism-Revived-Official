@@ -1,12 +1,12 @@
 ### Generic Ideological Events ###
 
-add_namespace = ideologies
+add_namespace = amr_ideologies
 
 # Anarchism on the Rise
 country_event = {
-    id = ideologies.1
-    title = ideologies.1.title
-    desc = ideologies.1.desc
+    id = amr_ideologies.1
+    title = amr_ideologies.1.title
+    desc = amr_ideologies.1.desc
     picture = GFX_report_event_soldiers_marching
 	
 	is_triggered_only = no
@@ -23,7 +23,7 @@ country_event = {
 	}
 	
 	option = { # Burn these Barbarians!
-		name = ideologies.1.a
+		name = amr_ideologies.1.a
 		ai_chance = {
 			base = 100
 		}
@@ -39,7 +39,7 @@ country_event = {
 	}
 	
 	option = { # Answer to Demands
-		name = ideologies.1.b
+		name = amr_ideologies.1.b
 		ai_chance = {
 			base = 100
 		}

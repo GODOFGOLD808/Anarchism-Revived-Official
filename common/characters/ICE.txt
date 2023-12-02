@@ -24,7 +24,7 @@ characters={
 			}
 			available = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 				}
 				has_completed_focus = ICE_the_kingdom_of_iceland
@@ -157,7 +157,7 @@ characters={
 			}
 			available = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 				}
 			}
@@ -203,7 +203,7 @@ characters={
 			}
 			available = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 				}
 			}
@@ -254,7 +254,7 @@ characters={
 			available = {
 				NOT = { has_government = fascism }
 				IF = { 
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					has_country_leader = {
 						ruling_only = yes
 						character = ICE_hermann_jonasson
@@ -298,7 +298,7 @@ characters={
 			available = {
 				NOT = { has_government = fascism }
 				IF = { 
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					has_country_leader = {
 						ruling_only = yes
 						character = ICE_hermann_jonasson
@@ -342,7 +342,7 @@ characters={
 			available = {
 				NOT = { has_government = fascism }
 				IF = { 
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					has_country_leader = {
 						ruling_only = yes
 						character = ICE_hermann_jonasson
@@ -386,7 +386,7 @@ characters={
 			available = {
 				NOT = { has_government = fascism }
 				IF = { 
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					has_country_leader = {
 						ruling_only = yes
 						character = ICE_hermann_jonasson
@@ -462,11 +462,11 @@ characters={
 			}
 			available = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = fascism
 				}
 				IF = { 
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					has_country_leader = {
 						ruling_only = yes
 						character = ICE_olafur_thors
@@ -662,7 +662,7 @@ characters={
 			available = {
 				OR = {
 					has_government = neutrality
-					has_government = democratic
+					has_democratic_government = yes
 				}
 				has_completed_focus = ICE_the_kingdom_of_iceland
 			}

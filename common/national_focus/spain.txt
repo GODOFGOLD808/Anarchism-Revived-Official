@@ -4115,13 +4115,13 @@ focus_tree = {
 			OR = {
 				AND = {
 					ENG = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 					}
 				}
 				AND = {
 					USA = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 					}
 				}
@@ -4134,8 +4134,8 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AND = {
-					NOT = { USA = { has_government = democratic } }
-					NOT = { ENG = { has_government = democratic } }
+					NOT = { USA = { has_democratic_government = yes } }
+					NOT = { ENG = { has_democratic_government = yes } }
 				}
 				is_in_faction_with = USA
 				is_in_faction_with = ENG
@@ -4163,7 +4163,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 					}
 				}
@@ -4172,7 +4172,7 @@ focus_tree = {
 			if = {
 				limit = {
 					USA = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 					}
 				}
@@ -5091,7 +5091,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					ENG = { has_government = democratic }
+					ENG = { has_democratic_government = yes }
 				}
 				effect_tooltip = {
 					290 = {
@@ -11616,7 +11616,7 @@ focus_tree = {
 			NOT = { has_global_flag = scw_over }
 			FRA = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = communism
 				}
 			}
@@ -12075,7 +12075,7 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 				set_politics = {
@@ -12152,7 +12152,7 @@ focus_tree = {
 		id = SPR_ideological_allies
 		available = {
 			any_other_country = {
-				has_government = democratic
+				has_democratic_government = yes
 				is_faction_leader = yes
 			}
 			is_in_faction = no
@@ -12178,7 +12178,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 						NOT = { has_war_with = ROOT }
 					}
@@ -12190,7 +12190,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					USA = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 						NOT = { has_war_with = ROOT }
 					}
@@ -12202,7 +12202,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					FRA = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 						NOT = { has_war_with = ROOT }
 					}
@@ -12214,7 +12214,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					any_country = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 						NOT = { has_war_with = ROOT }
 						is_major = yes
@@ -12222,7 +12222,7 @@ focus_tree = {
 				}
 				random_country = {
 					limit = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 						NOT = { has_war_with = ROOT }
 						is_major = yes
@@ -12233,7 +12233,7 @@ focus_tree = {
 			else = {
 				random_country = {
 					limit = {
-						has_government = democratic
+						has_democratic_government = yes
 						is_faction_leader = yes
 						NOT = { has_war_with = ROOT }
 					}

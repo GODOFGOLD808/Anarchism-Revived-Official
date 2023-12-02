@@ -128,13 +128,13 @@ characters={
 			available = {
 				is_country_leader = no
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 				}
 			}
 			visible = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 				}
 			}
@@ -252,7 +252,7 @@ characters={
 				available = {
 					is_country_leader = no
 					OR = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_government = communism
 						has_government = neutrality
 					}
@@ -261,7 +261,7 @@ characters={
 
 				visible = {
 					OR = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_government = communism
 						has_government = neutrality
 					}
@@ -1365,11 +1365,11 @@ characters={
 					original_tag  = SWE
 				}
 				available = {
-					has_government = democratic
+					has_democratic_government = yes
 				}
 				visible = {
 					OR = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_government = communism
 					}
 				}
@@ -1466,14 +1466,14 @@ characters={
 			}
 			available = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = communism
 				}
 			}
 
 			visible = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = communism
 				}
 			}
@@ -1498,7 +1498,7 @@ characters={
 			idea_token = SWE_herman_eriksson
 			visible = { 
 				OR = {
-					has_government = democratic 
+					has_democratic_government = yes 
 					has_government = communism
 					has_government = neutrality
 				}
@@ -1506,7 +1506,7 @@ characters={
 
 			available = {
 				OR = {
-					has_government = democratic 
+					has_democratic_government = yes 
 					has_government = communism
 					has_government = neutrality
 				}
@@ -1536,10 +1536,10 @@ characters={
 
 	SWE_ebba_palmstierna={
 		advisor={
-			#visible = { has_government = democratic }
+			#visible = { has_democratic_government = yes }
 			available = {
 				OR = {
-					has_government = democratic 
+					has_democratic_government = yes 
 					has_government = communism
 				}
 			}
@@ -1724,7 +1724,7 @@ characters={
 			available = { 
 				has_completed_focus = SWE_education_reform
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = communism
 				}
 			}
@@ -1772,7 +1772,7 @@ characters={
 			available = { 
 				has_completed_focus = SWE_education_reform
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = communism
 				}
 			}
@@ -1818,13 +1818,13 @@ characters={
 				original_tag  = SWE
 			}
 			visible = { 
-				has_government = democratic 
+				has_democratic_government = yes 
 				has_government = neutrality
 				has_government = communism
 			}
 
 			available = {
-				has_government = democratic 
+				has_democratic_government = yes 
 				has_government = neutrality
 				has_government = communism
 			}
@@ -1974,7 +1974,7 @@ characters={
 					has_government = communism
 					AND = {
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -1984,7 +1984,7 @@ characters={
 					has_government = communism
 					AND = {
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -2023,7 +2023,7 @@ characters={
 					has_government = communism
 					AND = {
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -2033,7 +2033,7 @@ characters={
 					has_government = communism
 					AND = {
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -2064,7 +2064,7 @@ characters={
 					has_government = communism
 					AND = {
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -2074,7 +2074,7 @@ characters={
 					has_government = communism
 					AND = {
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -2099,7 +2099,7 @@ characters={
 			}
 			visible = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = communism
 				}
 			}

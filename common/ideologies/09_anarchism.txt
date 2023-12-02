@@ -1,6 +1,8 @@
 ideologies = {
 
-		anarchism = {
+	anarchism = {
+
+		types = {
 
 			anarchism_ideology  = {
 			}

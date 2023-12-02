@@ -1,0 +1,387 @@
+### Ideological Opinion Modifiers ###
+on_actions = {
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				### Opinion Modifiers Setup ###
+				every_other_country = {
+					#######################
+					###	Basic Modifiers ###
+					#######################
+					if = {
+						limit = {
+							has_government = PREV
+						}
+						add_opinion_modifier = {
+							target = PREV
+							modifier = same_ideology
+						}
+					}
+					##########################
+					### Similar Ideologies ###
+					##########################
+					else_if = {
+						limit = {
+							OR = {
+								AND = {
+									has_government = nazism
+									PREV = {
+										has_government = fascism
+									}
+								}
+								AND = {
+									has_government = fascism
+									PREV = {
+										has_government = nazism
+									}
+								}
+								AND = {
+									has_government = syndicalism
+									PREV = {
+										has_government = communism
+									}
+								}
+								AND = {
+									has_government = communism
+									PREV = {
+										has_government = syndicalism
+									}
+								}
+							}
+						}
+						add_opinion_modifier = {
+							target = PREV
+							modifier = similar_ideology
+						}
+					}
+					##########################
+					### Distant Ideologies ###
+					##########################
+					else_if = {
+						limit = {
+							OR = {
+								AND = {
+									has_government = communism
+									PREV = {
+										has_government = anarchism
+									}
+								}
+								AND = {
+									has_government = anarchism
+									PREV = {
+										has_government = communism
+									}
+								}
+								AND = {
+									has_government = neutrality
+									PREV = {
+										has_democratic_government = yes
+									}
+								}
+								AND = {
+									has_democratic_government = yes
+									PREV = {
+										has_government = neutrality
+									}
+								}
+								AND = {
+									has_government = monarchism
+									PREV = {
+										has_government = neutrality
+									}
+								}
+								AND = {
+									has_government = neutrality
+									PREV = {
+										has_government = monarchism
+									}
+								}
+								AND = {
+									has_democratic_government = yes
+									PREV = {
+										has_government = syndicalism
+									}
+								}
+								AND = {
+									has_government = syndicalism
+									PREV = {
+										has_democratic_government = yes
+									}
+								}
+							}
+						}
+						add_opinion_modifier = {
+							target = PREV
+							modifier = distant_ideology
+						}
+					}
+					##########################
+					### Radical Ideologies ###
+					##########################
+					else_if = {
+						limit = {
+							OR = {
+								AND = {
+									OR = {
+										has_democratic_government = yes
+										has_government = fascism
+										has_government = nazism
+										has_government = monarchism
+										has_government = neutrality
+									}
+									PREV = {
+										has_government = anarchism
+									}
+								}
+								AND = {
+									has_government = anarchism
+									PREV = {
+										OR = {
+											has_democratic_government = yes
+											has_government = fascism
+											has_government = nazism
+											has_government = monarchism
+											has_government = neutrality
+										}
+									}
+								}
+							}
+						}
+						add_opinion_modifier = {
+							target = PREV
+							modifier = radical_ideology
+						}
+					}
+					else = {
+						add_opinion_modifier = {
+							target = PREV
+							modifier = different_ideology
+						}
+					}
+				}
+			}
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			### Opinion Modifiers Setup ###
+			every_other_country = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = same_ideology
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = radical_ideology
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = distant_ideology
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+				ROOT = {
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = same_ideology
+					}
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = similar_ideology
+					}
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = radical_ideology
+					}
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = distant_ideology
+					}
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = different_ideology
+					}
+				}
+				#######################
+				###	Basic Modifiers ###
+				#######################
+				if = {
+					limit = {
+						has_government = PREV
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = same_ideology
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = same_ideology
+					}
+				}
+				##########################
+				### Similar Ideologies ###
+				##########################
+				else_if = {
+					limit = {
+						OR = {
+							AND = {
+								has_government = nazism
+								ROOT = {
+									has_government = fascism
+								}
+							}
+							AND = {
+								has_government = fascism
+								ROOT = {
+									has_government = nazism
+								}
+							}
+							AND = {
+								has_government = syndicalism
+								ROOT = {
+									has_government = communism
+								}
+							}
+							AND = {
+								has_government = communism
+								ROOT = {
+									has_government = syndicalism
+								}
+							}
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = similar_ideology
+					}
+					reverse_add_opinion_modifier = {
+						target = ROOT
+						modifier = similar_ideology
+					}
+				}
+				##########################
+				### Distant Ideologies ###
+				##########################
+				else_if = {
+					limit = {
+						OR = {
+							AND = {
+								has_government = communism
+								ROOT = {
+									has_government = anarchism
+								}
+							}
+							AND = {
+								has_government = anarchism
+								ROOT = {
+									has_government = communism
+								}
+							}
+							AND = {
+								has_government = neutrality
+								ROOT = {
+									has_democratic_government = yes
+								}
+							}
+							AND = {
+								has_democratic_government = yes
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+							AND = {
+								has_government = monarchism
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+							AND = {
+								has_government = neutrality
+								ROOT = {
+									has_government = monarchism
+								}
+							}
+							AND = {
+								has_democratic_government = yes
+								ROOT = {
+									has_government = syndicalism
+								}
+							}
+							AND = {
+								has_government = syndicalism
+								ROOT = {
+									has_democratic_government = yes
+								}
+							}
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = distant_ideology
+					}
+					reverse_add_opinion_modifier = {
+						target = ROOT
+						modifier = distant_ideology
+					}
+				}
+				##########################
+				### Radical Ideologies ###
+				##########################
+				else_if = {
+					limit = {
+						OR = {
+							AND = {
+								OR = {
+									has_democratic_government = yes
+									has_government = fascism
+									has_government = nazism
+									has_government = monarchism
+									has_government = neutrality
+								}
+								ROOT = {
+									has_government = anarchism
+								}
+							}
+							AND = {
+								has_government = anarchism
+								ROOT = {
+									OR = {
+										has_democratic_government = yes
+										has_government = fascism
+										has_government = nazism
+										has_government = monarchism
+										has_government = neutrality
+									}
+								}
+							}
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = radical_ideology
+					}
+					reverse_add_opinion_modifier = {
+						target = ROOT
+						modifier = radical_ideology
+					}
+				}
+				else = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = different_ideology
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = different_ideology
+					}
+				}
+			}
+		}
+	}
+}

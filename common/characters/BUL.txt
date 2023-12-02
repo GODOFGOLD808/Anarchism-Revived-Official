@@ -1546,7 +1546,7 @@ characters = {
 						BUL_is_democratic_liberal_ai = yes 
 					}
 					NOT = {
-						has_government = democratic 
+						has_democratic_government = yes 
 					}
 				}
 				modifier = {
@@ -1970,7 +1970,7 @@ characters = {
 			available = {
 				has_completed_focus = BUL_appoint_right_wing_ministers 
 				NOT = {
-					has_government = democratic 
+					has_democratic_government = yes 
 				}
 				NOT = {
 					has_government = communism 
@@ -2066,7 +2066,7 @@ characters = {
 			available = {
 				has_completed_focus = BUL_approach_germany 
 				NOT = {
-					has_government = democratic 
+					has_democratic_government = yes 
 				}
 				NOT = {
 					has_government = communism 
@@ -2106,7 +2106,7 @@ characters = {
 			available = {
 				has_completed_focus = BUL_approach_germany 
 				NOT = {
-					has_government = democratic 
+					has_democratic_government = yes 
 				}
 				NOT = {
 					has_government = communism 

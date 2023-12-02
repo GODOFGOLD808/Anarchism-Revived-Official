@@ -2655,7 +2655,7 @@ SWI_make_centralized_president = { #This takes the current president of the Conf
 		}
 	}
 	if = {
-		limit = { ROOT = { has_government = democratic } }
+		limit = { ROOT = { has_democratic_government = yes } }
 		if = {
 			limit = { SWI_councilor_is_democratic_liberalism = yes }
 			add_country_leader_role = {
@@ -2837,7 +2837,7 @@ SWI_find_best_democratic_ally = { #This looks for the most suitable democratic a
 		limit = {
 			FRA = {
 				exists = yes
-				has_government = democratic
+				has_democratic_government = yes
 				SWI_is_country_to_balance = yes 
 				has_capitulated = no 
 				OR = {
@@ -2855,7 +2855,7 @@ SWI_find_best_democratic_ally = { #This looks for the most suitable democratic a
 			ENG = {
 				exists = yes
 				is_faction_leader = yes
-				has_government = democratic
+				has_democratic_government = yes
 			}
 		}
 		set_variable = {
@@ -2868,7 +2868,7 @@ SWI_find_best_democratic_ally = { #This looks for the most suitable democratic a
 				exists = yes
 				SWI_is_country_to_balance = yes
 				is_faction_leader = yes
-				has_government = democratic
+				has_democratic_government = yes
 			}
 		}
 		set_variable = {
@@ -2881,7 +2881,7 @@ SWI_find_best_democratic_ally = { #This looks for the most suitable democratic a
 				is_major = yes
 				is_faction_leader = yes
 				exists = yes 
-				has_government = democratic
+				has_democratic_government = yes
 				NOT = { has_war_with = ROOT }
 			}
 			SWI = {
@@ -3069,7 +3069,7 @@ SWI_turn_into_alpine = {
 	}
 	if = {
 		limit = {
-			has_government = democratic 
+			has_democratic_government = yes 
 		}
 		set_cosmetic_tag = SWI_alpine_democratic
 	}
@@ -3362,7 +3362,7 @@ SWI_on_action_puppet_selection = { # DO NOT USE OUTSIDE ON_ACTIONS Effect to sel
 					ROOT = { set_cosmetic_tag = SWI_GER_puppet_fascism }
 				}
 				else_if = {
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					ROOT = { set_cosmetic_tag = SWI_GER_puppet_democratic }
 				}
 			}
@@ -3373,7 +3373,7 @@ SWI_on_action_puppet_selection = { # DO NOT USE OUTSIDE ON_ACTIONS Effect to sel
 					ROOT = { set_cosmetic_tag = SWI_FRA_puppet_fascism}
 				}
 				else_if = {
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					ROOT = { set_cosmetic_tag = SWI_FRA_puppet_democratic }
 				}
 			}
@@ -3384,7 +3384,7 @@ SWI_on_action_puppet_selection = { # DO NOT USE OUTSIDE ON_ACTIONS Effect to sel
 					ROOT = { set_cosmetic_tag = SWI_ITA_puppet_fascism}
 				}
 				else_if = {
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					ROOT = { set_cosmetic_tag = SWI_ITA_puppet_democratic }
 				}
 			}
@@ -3402,12 +3402,12 @@ SWI_on_action_puppet_selection = { # DO NOT USE OUTSIDE ON_ACTIONS Effect to sel
 					ROOT = { set_cosmetic_tag = SWI_ENG_puppet_fascism}
 				}
 				else_if = {
-					limit = { has_government = democratic }
+					limit = { has_democratic_government = yes }
 					ROOT = { set_cosmetic_tag = SWI_ENG_puppet_democratic }
 				}
 			}
 			else_if = {
-				limit = { has_government = democratic }
+				limit = { has_democratic_government = yes }
 				ROOT = { set_cosmetic_tag = SWI_helvetic_republic }
 			}
 		}

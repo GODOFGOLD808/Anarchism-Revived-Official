@@ -2424,7 +2424,7 @@ characters = {
 			available = {
 				OR = {
 					AND = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_completed_focus = ITA_army_leaders
 					}
 					has_completed_focus = ITA_meritocracy
@@ -2451,7 +2451,7 @@ characters = {
 				OR = {
 					AND = {
 						OR = {
-							has_government = democratic
+							has_democratic_government = yes
 							has_government = neutrality
 						}
 						has_completed_focus = ITA_army_leaders
@@ -2569,7 +2569,7 @@ characters = {
 					has_completed_focus = ITA_monarchia_d_italia
 					AND = {
 						has_completed_focus = ITA_common_ground
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -2727,7 +2727,7 @@ characters = {
 			}
 			do_effect = {
 				NOT = {
-					has_government = democratic 
+					has_democratic_government = yes 
 				}
 			}
 			ai_will_do = {
@@ -2776,7 +2776,7 @@ characters = {
 					has_completed_focus = ITA_disband_the_blackshirts
 					AND = {
 						has_completed_focus = ITA_common_ground
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 				NOT = { 
@@ -2820,7 +2820,7 @@ characters = {
 					has_completed_focus = ITA_christian_democracy
 					AND = {
 						has_completed_focus = ITA_common_ground
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -2972,7 +2972,7 @@ characters = {
 				}
 				OR = {
 					has_government = communism
-					has_government = democratic
+					has_democratic_government = yes
 				}
 			}
 		}
@@ -3002,7 +3002,7 @@ characters = {
 				}
 				OR = {
 					has_government = communism
-					has_government = democratic
+					has_democratic_government = yes
 				}
 			}
 		}
@@ -3057,7 +3057,7 @@ characters = {
 				}
 				OR = {
 					has_government = communism
-					has_government = democratic
+					has_democratic_government = yes
 				}
 			}
 		}
@@ -3084,7 +3084,7 @@ characters = {
 					has_government = communism
 					AND = {
 						has_completed_focus = ITA_common_ground
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 			}
@@ -3113,7 +3113,7 @@ characters = {
 				}
 				OR = {
 					has_government = communism
-					has_government = democratic
+					has_democratic_government = yes
 				}
 			}
 		}
@@ -3182,7 +3182,7 @@ characters = {
 				OR = {
 					has_completed_focus = ITA_the_popular_front
 					AND = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_completed_focus = ITA_common_ground
 					}
 				}
@@ -3342,7 +3342,7 @@ characters = {
 				OR = {
 					has_completed_focus = ITA_the_popular_front
 					AND = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_completed_focus = ITA_common_ground
 					}
 				}
@@ -3376,7 +3376,7 @@ characters = {
 				OR = {
 					has_completed_focus = ITA_the_popular_front
 					AND = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_completed_focus = ITA_common_ground
 					}
 				}

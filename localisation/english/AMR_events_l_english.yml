@@ -46,10 +46,10 @@
  makhnovshchina.1.c:0 "Let's leave this land"
  #
  ### Ideological Events ###
- ideologies.1.title:0 "Anarchism on the Rise"
- ideologies.1.desc:0 "Instability and decudent movements clash in the streets with local authorities. If left alone or mismanaged, disaster looms over the country."
- ideologies.1.a:0 "Burn these Barbarians!"
- ideologies.1.b:0 "Answer to Demands"
+ amr_ideologies.1.title:0 "Anarchism on the Rise"
+ amr_ideologies.1.desc:0 "Instability and decudent movements clash in the streets with local authorities. If left alone or mismanaged, disaster looms over the country."
+ amr_ideologies.1.a:0 "Burn these Barbarians!"
+ amr_ideologies.1.b:0 "Answer to Demands"
  #
  ### Other Events ###
  giant.1.title:0 "The Alton Giant"

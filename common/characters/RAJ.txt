@@ -726,7 +726,7 @@ characters={
 			}
 			do_effect = {
 				NOT = {
-					has_government = democratic 
+					has_democratic_government = yes 
 				}
 			}
 			ai_will_do = {

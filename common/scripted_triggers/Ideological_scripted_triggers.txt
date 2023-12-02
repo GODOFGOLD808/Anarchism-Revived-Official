@@ -1,5 +1,6 @@
 ### Ideological Scripted Triggers ###
 
+# For Anarchism
 has_anarchism_stats = {
 	tag = ROOT
 		
@@ -8,7 +9,7 @@ has_anarchism_stats = {
 		anarchism > 0.10 # 10%
 	}
 	
-	# Must have at least one of tthese Ideologies
+	# Must have at least one of these Ideologies
 	has_government = communism
 	OR = {
 		has_government = syndicalism
@@ -39,4 +40,12 @@ has_anarchism_stats = {
 	
 	# Must have this Idea/National Spirit
 	has_idea = in_turmoil
+}
+
+# For the new Ideologies
+has_democratic_government = {
+    OR = {
+        has_government = liberal
+        has_government = conservative
+    }
 }

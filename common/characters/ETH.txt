@@ -762,7 +762,7 @@ characters = {
 		allowed_civil_war = {
 			OR = {
 				has_government = neutrality
-				has_government = democratic
+				has_democratic_government = yes
 			}
 		}
 		portraits = {
@@ -790,7 +790,7 @@ characters = {
 		allowed_civil_war = {
 			OR = {
 				has_government = neutrality
-				has_government = democratic
+				has_democratic_government = yes
 			}	
 		}
 		portraits = {
@@ -810,7 +810,7 @@ characters = {
 			visible = {
 				OR = {
 					has_government = neutrality
-					has_government = democratic
+					has_democratic_government = yes
 				}	
 			}
 		}
@@ -859,7 +859,7 @@ characters = {
 		allowed_civil_war = {
 			OR = {
 				has_government = neutrality
-				has_government = democratic
+				has_democratic_government = yes
 			}
 		}
 		portraits = {
@@ -900,7 +900,7 @@ characters = {
 			}
 			allowed_civil_war = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 				}
 			}
@@ -919,7 +919,7 @@ characters = {
 				available = {
 					OR = {
 						has_government = neutrality
-						has_government = democratic
+						has_democratic_government = yes
 					}
 				}
 				traits  = {
@@ -956,7 +956,7 @@ characters = {
 		allowed_civil_war = {
 			OR = { 
 				has_government = neutrality
-				has_government = democratic
+				has_democratic_government = yes
 			}
 		}
 		portraits = {
@@ -973,7 +973,7 @@ characters = {
 			available = {
 				OR = {
 					has_government = neutrality
-					has_government = democratic
+					has_democratic_government = yes
 				}
 			}
 			traits  = {
@@ -1013,7 +1013,7 @@ characters = {
 				original_tag  = ETH
 			}
 			available = {
-				NOT = { has_government = democratic }
+				NOT = { has_democratic_government = yes }
 				NOT = { has_idea_with_trait = minister_of_the_interior_aregai }
 				NOT = { has_completed_focus = ETH_boarding_the_train }
 			}
@@ -1038,7 +1038,7 @@ characters = {
 			allowed = { has_dlc = "La Resistance" }
 			allowed_civil_war = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 					AND = {
 						has_government = fascism
@@ -1071,7 +1071,7 @@ characters = {
 					has_completed_focus = ETH_the_fetno-derash
 					OR = {
 						has_government = neutrality
-						has_government = democratic
+						has_democratic_government = yes
 						has_government = communism
 						AND = {
 							has_country_leader = {
@@ -1132,7 +1132,7 @@ characters = {
 		name = ETH_workneh_eshete
 		allowed_civil_war = {
 			OR = {
-				has_government = democratic
+				has_democratic_government = yes
 				has_government = neutrality
 			}
 		}
@@ -1148,7 +1148,7 @@ characters = {
 				original_tag = ETH
 			}
 			available = {
-				has_government = democratic
+				has_democratic_government = yes
 			}
 			traits  = {
 				modernizer_and_diplomat
@@ -1160,7 +1160,7 @@ characters = {
 		name = ETH_yilma_deressa
 		allowed_civil_war = {
 			OR = {
-				has_government = democratic
+				has_democratic_government = yes
 				has_government = neutrality
 				has_government = communism
 			}
@@ -1201,7 +1201,7 @@ characters = {
 		name = ETH_tekle_hawariat_tekle_mariyam
 		allowed_civil_war = {
 			OR = {
-				has_government = democratic
+				has_democratic_government = yes
 				has_government = communism
 				has_government = neutrality
 			}
@@ -1219,7 +1219,7 @@ characters = {
 			}
 			available = {
 				OR = { 
-					has_government = democratic 
+					has_democratic_government = yes 
 					has_government = communism 
 				}
 				NOT = { has_idea_with_trait = minister_of_finance_deressa }
@@ -1319,7 +1319,7 @@ characters = {
 		name = ETH_viking_tamm
 		allowed_civil_war = {
 			OR = {
-				has_government = democratic
+				has_democratic_government = yes
 				has_government = neutrality
 			}
 		}
@@ -1362,7 +1362,7 @@ characters = {
 			name = ETH_john_robinson
 			allowed_civil_war = {
 				OR = {
-					has_government = democratic
+					has_democratic_government = yes
 					has_government = neutrality
 					has_government = communism
 				}
@@ -1422,7 +1422,7 @@ characters = {
 		name = ETH_carl_gustav_von_rosen
 		allowed_civil_war = {
 			OR = {
-				has_government = democratic
+				has_democratic_government = yes
 				has_government = neutrality
 			}
 		}
